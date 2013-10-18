@@ -1,0 +1,2 @@
+env = Environment()
+env.SharedLibrary("What", ["what.cpp"])
