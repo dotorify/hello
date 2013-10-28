@@ -27,6 +27,14 @@ class ClassA
             return this->val == r.val;
         }
 
+        bool operator <= (const ClassA& r) const {
+            return this->val <= r.val;
+        }
+
+        bool operator >= (const ClassA& r) const {
+            return this->val >= r.val;
+        }
+
         bool operator != (const ClassA& r) const {
             return this->val != r.val;
         }
@@ -56,6 +64,8 @@ int main(void)
     assert(!(a>b));
     assert(a!=b);
     assert(!(a==b));
+    assert(a<=b);
+    assert(!(a>=b));
 
     return 0;
 }
