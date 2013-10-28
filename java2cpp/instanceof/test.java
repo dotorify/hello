@@ -1,3 +1,7 @@
+/**
+ * instanceof는 컴파일 에러를 발생시키므로
+ * Class class의 isInstance 메소드로 대체한다.
+ */
 class RmObject {}
 
 class Parent extends RmObject {}
@@ -7,7 +11,7 @@ class Child extends Parent {}
 class TheOther extends RmObject {}
 
 
-public class test3{
+public class test{
     public static void main(String args[])
     {
         boolean rst;
@@ -18,7 +22,7 @@ public class test3{
 
         try {
             System.out.println("--------------------------------------");
-            System.out.println(" Java instanceOf 테스트 ");
+            System.out.println(" Java instanceof 테스트 ");
             System.out.println("--------------------------------------");
 
 
