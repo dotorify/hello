@@ -15,7 +15,7 @@ class ClassA
             this->val = o.val;
         }
 
-        bool operator < (const ClassA& r) {
+        bool operator < (const ClassA& r) const {
             return this->val < r.val;
         }
 
@@ -28,15 +28,15 @@ class ClassA
         }
 
         bool operator <= (const ClassA& r) const {
-            return this->val <= r.val;
+            return !(*this > r);
         }
 
         bool operator >= (const ClassA& r) const {
-            return this->val >= r.val;
+            return !(*this < r);
         }
 
         bool operator != (const ClassA& r) const {
-            return this->val != r.val;
+            return !(*this == r);
         }
 
         const char* toString() const {
