@@ -2,15 +2,18 @@
 #define __LANG_EXCEPTION_H__
 
 #include <string>
-#include <exception>
+#include <openehr/lang/Object.h>
 
-class Exception
-{
-    public: Exception(std::string msg);
-    public: std::string toString();
-    private: std::string msg;
-};
+namespace ehr {
 
+    class Exception : public Object
+    {
+        public: Exception(std::string msg);
+        public: std::string toString();
+        private: std::string msg;
+    };
+
+}
 
 
 #endif

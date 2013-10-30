@@ -8,9 +8,26 @@ namespace ehr {
 
     }
 
+    DataValue::~DataValue()
+    {
+
+    }
+
     std::string DataValue::toString()
     {
         return "DataValue class";
+    }
+
+    std::string DataValue::getReferenceModelName()
+    {
+        throw ehr::Exception("Not Implemented");
+        return "";
+    }
+
+    std::string DataValue::serialise()
+    {
+        throw ehr::Exception("Not Implemented");
+        return "";
     }
 
     DataValue* DataValue::parseValue(const std::string &value) {

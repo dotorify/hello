@@ -1,2 +1,4 @@
-TEMPLATE = subdirs
-SUBDIRS = RmObject_UnitTest
+TEMPLATE =  subdirs
+
+SUBDIRS =   RmObject_UnitTest \
+            DvValue_UnitTest

@@ -2,7 +2,6 @@
 #define __DATAVALUE_H__
 
 #include <string>
-
 #include <openehr/rm/RmObject.h>
 
 namespace ehr {
@@ -15,7 +14,9 @@ namespace ehr {
      */
     class DataValue : public RmObject
     {
-        protected: DataValue();
+        //protected: DataValue();
+        public: DataValue();
+        public: ~DataValue();
 
         /**
          * String form displayable for humans
