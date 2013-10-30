@@ -1,2 +1,10 @@
 *.o
 *.a
+*.so
+*.so.*
+
+# Qt관련 파일
+*.moc
+
+# UnitTest관련 파일
+*_UnitTest
