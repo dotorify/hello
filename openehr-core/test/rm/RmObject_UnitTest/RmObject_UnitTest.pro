@@ -5,11 +5,13 @@
 CONFIG += qtestlib
 TEMPLATE = app
 TARGET = 
-DEPENDPATH += .
-INCLUDEPATH += .
+DEPENDPATH      += ../../../main/
+INCLUDEPATH     += ../../../main/
+QMAKE_LIBDIR    += ../../../main/
 
 # Input
 SOURCES = RmObject_UnitTest.cpp
+INCLUDEPATH += 
+LIBS = -lopenehr
 
 QMAKE_POST_LINK += export QTEST_COLORED=1 && ./$(TARGET)
-

@@ -5,12 +5,12 @@
 CONFIG += qtestlib
 TEMPLATE = app
 TARGET = 
-DEPENDPATH      += .
-INCLUDEPATH     += ../../main/
-QMAKE_LIBDIR    += ../../main/
+DEPENDPATH      += ../../../../../main/
+INCLUDEPATH     += ../../../../../main/
+QMAKE_LIBDIR    += ../../../../../main/
 
 # Input
-SOURCES = DvValue_UnitTest.cpp
+SOURCES = DataValue_UnitTest.cpp
 INCLUDEPATH += 
 LIBS = -lopenehr
 

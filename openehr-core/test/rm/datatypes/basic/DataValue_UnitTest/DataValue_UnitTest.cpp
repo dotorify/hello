@@ -7,11 +7,11 @@
 using namespace std;
 using namespace ehr;
 
-class DvValue_UnitTest : public QObject
+class DataValue_UnitTest : public QObject
 {
     Q_OBJECT;
     private slots:
-        void testDvValue()
+        void testDataValue()
         {
             try {
                 DataValue::parseValue("[a],[b]");
@@ -22,5 +22,5 @@ class DvValue_UnitTest : public QObject
         }
 };
 
-QTEST_MAIN(DvValue_UnitTest)
-#include "DvValue_UnitTest.moc"
+QTEST_MAIN(DataValue_UnitTest)
+#include "DataValue_UnitTest.moc"

@@ -1,4 +1,6 @@
 TEMPLATE =  subdirs
+CONFIG += orderd
 
-SUBDIRS =   RmObject_UnitTest \
-            DvValue_UnitTest
+SUBDIRS =   ../main/\
+            rm/RmObject_UnitTest \
+            rm/datatypes/basic/DataValue_UnitTest
