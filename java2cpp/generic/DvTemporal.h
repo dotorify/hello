@@ -1,11 +1,12 @@
 #ifndef __DVTEMPORAL_H__
 #define __DVTEMPORAL_H__
 
-#include "DvTemporal.h"
 #include "DvDuration.h"
+#include <stdio.h>
 
-class DvDuration;
+//class DvDuration;
 
+template <typename T>
 class DvTemporal
 {
     public:
@@ -13,7 +14,7 @@ class DvTemporal
 
         int getDateTime();
 
-        DvDuration* diff(DvTemporal *other);
+        DvDuration* diff(DvTemporal<T> *other);
 
     private:
         int data;

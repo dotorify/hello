@@ -1,17 +1,18 @@
-#include <stdio.h>
 
-
-DvTemporal::DvTemporal(int val)
+template <typename T>
+DvTemporal<T>::DvTemporal(int val)
 {
     this->data = val;
 }
 
-int DvTemporal::getDateTime()
+template <typename T>
+int DvTemporal<T>::getDateTime()
 {
     return this->data;
 }
 
-DvDuration* DvTemporal::diff(DvTemporal *other)
+template <typename T>
+DvDuration* DvTemporal<T>::diff(DvTemporal<T> *other)
 {
     return DvDuration::getDifference(this, other);
 }

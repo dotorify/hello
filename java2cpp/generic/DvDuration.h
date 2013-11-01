@@ -1,8 +1,9 @@
 #ifndef __DVDURATION_H__
 #define __DVDURATION_H__
 
-#include "DvTemporal.h"
+template <typename T>
 class DvTemporal;
+
 
 class DvDuration
 {
@@ -11,10 +12,12 @@ class DvDuration
         int getData();
 
     public:
-        static DvDuration* getDifference(DvTemporal *start, DvTemporal *end);
+        static DvDuration* getDifference(DvTemporal<int> *start, DvTemporal<int> *end);
 
     private:
         int data;
 };
+
+#include "DvTemporal.h"
 
 #endif //__DVDURATION_H__
