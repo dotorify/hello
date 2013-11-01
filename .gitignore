@@ -3,6 +3,9 @@
 *.so
 *.so.*
 
+tags
+cscope.out
+
 # Qt관련 파일
 *.moc
 
