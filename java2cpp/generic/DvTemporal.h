@@ -10,6 +10,7 @@ template <typename T>
 class DvTemporal
 {
     public:
+        DvTemporal();
         DvTemporal(int val);
 
         int getDateTime();

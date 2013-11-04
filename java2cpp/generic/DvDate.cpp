@@ -2,8 +2,11 @@
 
 DvDate::DvDate()
 {
-    DvTemporal<int> temp(5);
-    DvTemporal<int> temp2(10);
-    temp.diff(&temp2);
 
+}
+
+DvDuration* DvDate::getDifference(DvTemporal<DvDate> *other)
+{
+    DvDuration *p = new DvDuration(1);
+    return NULL;
 }

@@ -10,7 +10,7 @@ int DvDuration::getData()
     return this->data;
 }
 
-DvDuration* DvDuration::getDifference(DvTemporal<int> *start, DvTemporal<int> *end)
+DvDuration* DvDuration::getDifference(DvTemporal<DvDate*> *start, DvTemporal<DvDate*> *end)
 {
-    return new DvDuration(end->getDateTime() - start->getDateTime());
+    return start->diff(end);
 }

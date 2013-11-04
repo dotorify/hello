@@ -1,5 +1,11 @@
 
 template <typename T>
+DvTemporal<T>::DvTemporal()
+{
+    this->data = 0;
+}
+
+template <typename T>
 DvTemporal<T>::DvTemporal(int val)
 {
     this->data = val;
