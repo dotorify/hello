@@ -10,13 +10,7 @@
 
 ## FILE LIST
 
-- composition.xml: XML 데이터
-- create-db.js: 테스트용 테이블(xml_test) 생성
-- drop-db.js: 테스트용 테이블(xml_test) 삭제
+- xml/: xml 테스트 디렉토리
+- json/: json 테스트 디렉토리
 - hello-world.js: PostgreSQL과 연결 테스트. 연결이 안되면 계정과 비밀번호를 변경한다.
-- insert-data.js: 테스트용 테이블(xml_test)에 'composition.xml'을 1개 삽입한다.
 
-
-## 참고자료
-
-- [Insert XML from file in PostgreSQL @ StackOverflow](http://stackoverflow.com/questions/15611304/insert-xml-from-file-in-postgresql)
